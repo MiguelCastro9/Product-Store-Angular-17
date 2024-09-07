@@ -1,0 +1,15 @@
+<div class="button-new-product">
+  <a mat-raised-button color="primary" [routerLink]="['/create']">+ New product</a>
+</div>
+
+<div class="cards-container">
+  @for (product of products(); track product.id) {
+    <!-- Defer Block, to load components on demand. -->
+    @defer (on immediate) {
+      <app-card [product]="product" (edit)="onEdit(product)" (delete)="onDelete(product)"></app-card>
+    }
+  }
+  @empty {
+      <h4>No have prodcts registred!</h4>
+  }
+</div>
