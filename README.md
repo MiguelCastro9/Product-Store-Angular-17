@@ -8,7 +8,7 @@ Project focused on studying the new features of Angular 17.
 
 <li> Angular 17 </li>
 <li> Angular Material </li>
-<li> JSON Server </li>
+<li> json-server db.json </li>
 
 <p></p>
 
